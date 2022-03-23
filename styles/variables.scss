@@ -1,0 +1,101 @@
+:root {
+  --fire-border: 12px solid #febd08;
+  --fire-shadow: 0 0 05px 0 rgb(244 110 28 / 80%),
+    0 0 10px 05px rgb(244 110 28 / 60%), 0 0 20px 11px rgb(244 110 28 / 30%);
+  --fire-color: rgba(244, 110, 28, 0.7);
+  --fire-shadow-2: 0 0 10px 05px rgb(244 110 28 / 70%);
+
+  // ------- LIGHT-THEME
+  --frame-background-light: linear-gradient(
+    to bottom,
+    #b9dfff,
+    #4ba0db,
+    #004390
+  );
+  --sun-color: rgb(255, 222, 102);
+  --sun-shadow: 0 0 16px rgba(255, 237, 175, 0.5), inset 0 0 8px #ffffad;
+  --sun-rays-background: radial-gradient(
+    rgba(255, 222, 102, 0.8) 50%,
+    rgba(255, 237, 175, 0.2) 70%
+  );
+  --sun-rays--shadow: 0 0 8px rgba(255, 237, 175, 1);
+  --land-color-light: linear-gradient(to bottom, #658433, #36471b);
+  --land-shadow-light: inset 0 8px 16px #ffffe0a3;
+  --tree-top-background-light: linear-gradient(to bottom, #99ac5e, #658433);
+  --tree-trunk-background-light: linear-gradient(#8e724e, #422f15);
+  --wood-shadow-light: rgba(10, 23, 29, 0.6);
+  --smoke-border: 20px solid rgba(0, 0, 0, 0.3);
+  --cloud-background: #fff;
+  --cloud-shadow: radial-gradient(
+    48% 64%,
+    circle,
+    rgba(204, 0, 0, 0) 110px,
+    #9bbbc4 50px
+  );
+  --cloud-shadow-moz: moz-radial-gradient(
+    48% 64%,
+    circle,
+    rgba(204, 0, 0, 0) 110px,
+    #9bbbc4 50px
+  );
+  --cloud-shadow-webkit: webkit-radial-gradient(
+    48% 64%,
+    circle,
+    rgba(204, 0, 0, 0) 110px,
+    #9bbbc4 50px
+  );
+  --ballon-color: #48478b;
+  --ballon-stripes: #fbfbfb;
+  --ballon-rope: #f3f3f3;
+  --toggle-background-light: #000;
+  --toggle-border-light: #4ba0db;
+  --toggle-margin-light: 55%;
+
+  // ------ DARK-THEME
+  --frame-background-dark: linear-gradient(#0a171d, #000);
+  --moon-color: #b2b7bc;
+  --moon-shadow: inset -20px 2px 0 0px #c0c3c9,
+    0 0 10px 5px rgba(228, 228, 222, 0.4);
+  --moon-circle-border: 1px solid #adaca2;
+  --moon-circle-shadow: inset 2px -1px 0 0px #85868b;
+  --shooting-star-color: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    white
+  );
+  --land-color-dark: #112630;
+  --land-shadow-dark: inset 0 3px 30px rgb(116, 116, 109);
+  --tree-top-background-dark: linear-gradient(to bottom, #000, #0a171d);
+  --tree-trunk-background-dark: linear-gradient(#000000, #000000);
+  --wood-shadow-dark: rgba(10, 23, 29);
+  --toggle-background-dark: #000;
+  --toggle-border-dark: #777;
+  --toggle-margin-dark: 5%;
+}
+
+[data-theme='light'] {
+  --frame-background: var(--frame-background-light);
+  --sun-moon-color: var(--sun-color);
+  --sun-moon-shadow: var(--sun-shadow);
+  --land-color: var(--land-color-light);
+  --land-shadow: var(--land-shadow-light);
+  --tree-top: var(--tree-top-background-light);
+  --tree-trunk: var(--tree-trunk-background-light);
+  --wood-shadow: var(--wood-shadow-light);
+  --toggle-background: var(--toggle-background-light);
+  --toggle-border: var(--toggle-border-light);
+  --toggle-margin: var(--toggle-margin-light);
+}
+[data-theme='dark'] {
+  --frame-background: var(--frame-background-dark);
+  --sun-moon-color: var(--moon-color);
+  --sun-moon-shadow: var(--moon-shadow);
+  --land-color: var(--land-color-dark);
+  --land-shadow: var(--land-shadow-dark);
+  --tree-top: var(--tree-top-background-dark);
+  --tree-trunk: var(--tree-trunk-background-dark);
+  --wood-shadow: var(--wood-shadow-dark);
+  --toggle-background: var(--toggle-background-dark);
+  --toggle-border: var(--toggle-border-dark);
+  --toggle-margin: var(--toggle-margin-dark);
+}

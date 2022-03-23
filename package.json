@@ -1,0 +1,22 @@
+{
+  "name": "dark-light-theme",
+  "homepage": "https://nikolamiljkovic91.github.io/dark-light-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "vite": "^2.8.6"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

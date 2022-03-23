@@ -1,0 +1,94 @@
+.ballon {
+  height: 200px;
+  width: 200px;
+  background: var(--ballon-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 280px;
+  top: 80px;
+  animation: animate-ballon 4.5s infinite;
+  transform: scale(0.3);
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 140px;
+    border-radius: 50%;
+    background: var(--ballon-stripes);
+    left: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 80px;
+    border-radius: 50%;
+    background: var(--ballon-color);
+    left: 60px;
+    top: 0;
+  }
+
+  .bottom {
+    background: var(--ballon-color);
+    height: 20px;
+    width: 90px;
+    position: relative;
+    top: 188px;
+    left: 53px;
+  }
+
+  .basket {
+    height: 50px;
+    width: 70px;
+    background: var(--ballon-color);
+    position: relative;
+    top: 240px;
+    left: 62.5px;
+    border-radius: 0 0 10px 10px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: var(--ballon-rope);
+      height: 7px;
+      width: 80px;
+      border-radius: 7px;
+      left: -5px;
+    }
+  }
+
+  .rope {
+    background: var(--ballon-rope);
+    height: 55px;
+    width: 3px;
+    position: relative;
+    top: 137px;
+    left: 96.5px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: var(--ballon-rope);
+      height: 55px;
+      width: 3px;
+      top: 0;
+      left: -38px;
+      transform: rotate(-8deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: var(--ballon-rope);
+      height: 55px;
+      width: 3px;
+      top: 0;
+      left: 38px;
+      transform: rotate(8deg);
+    }
+  }
+}
