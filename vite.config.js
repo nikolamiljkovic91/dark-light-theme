@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/dark-light-theme/',
+  root: './',
   css: {
     preprocessorOptions: {
       scss: {
